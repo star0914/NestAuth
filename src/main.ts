@@ -12,6 +12,7 @@ async function bootstrap() {
     .addTag('forum')
     .build();
   const document = SwaggerModule.createDocument(app, options);
+
   SwaggerModule.setup('doc', app, document);
   
   await app.listen(2000);
